@@ -1,0 +1,8 @@
+## Interface: 90200
+## Title:|cffd6266cFastAutoSell|r
+## Notes: Repairs your items.
+## Author: BloodDragon2580
+## Version: 1.0
+
+
+FastAutoSell.lua
