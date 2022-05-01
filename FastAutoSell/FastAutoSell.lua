@@ -90,5 +90,3 @@ local StartMsg = CreateFrame("FRAME", nil, MerchantFrame)
                 StopSelling()
             end
     end)
-    
-end
