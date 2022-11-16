@@ -31,15 +31,15 @@ local StartMsg = CreateFrame("FRAME", nil, MerchantFrame)
         local CurrentItemLink, void
         
         for BagID = 0, 4 do
-            for BagSlot = 1, GetContainerNumSlots(BagID) do
-                CurrentItemLink = GetContainerItemLink(BagID, BagSlot)
+            for BagSlot = 1, C_Container.GetContainerNumSlots(BagID) do
+                CurrentItemLink = C_Container.GetContainerItemLink(BagID, BagSlot)
                 if CurrentItemLink then
                     void, void, Rarity, void, void, void, void, void, void, void, ItemPrice = GetItemInfo(CurrentItemLink)
-                    local void, itemCount = GetContainerItemInfo(BagID, BagSlot)
+                    local void, itemCount = C_Container.GetContainerItemInfo(BagID, BagSlot)
                     if Rarity == 0 and ItemPrice ~= 0 then
                         SoldCount = SoldCount + 1
                         if MerchantFrame:IsShown() then
-                            UseContainerItem(BagID, BagSlot)
+                            C_Container.UseContainerItem(BagID, BagSlot)
                             if SellJunkTicker._remainingIterations == IterationCount then
                                 totalPrice = totalPrice + (ItemPrice * itemCount)
                                 if SoldCount == 1 then
