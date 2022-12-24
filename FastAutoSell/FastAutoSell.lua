@@ -30,7 +30,7 @@ local StartMsg = CreateFrame("FRAME", nil, MerchantFrame)
         local SoldCount, Rarity, ItemPrice = 0, 0, 0
         local CurrentItemLink, void
         
-        for BagID = 0, 4 do
+        for BagID = 0, 5 do
             for BagSlot = 1, C_Container.GetContainerNumSlots(BagID) do
                 CurrentItemLink = C_Container.GetContainerItemLink(BagID, BagSlot)
                 if CurrentItemLink then
