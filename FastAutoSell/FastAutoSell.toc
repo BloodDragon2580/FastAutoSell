@@ -2,7 +2,8 @@
 ## Title:|cffd6266cFastAutoSell|r
 ## Notes: Simple addon that allows you to sell all your trash items (gray) to a vendor.
 ## Author: BloodDragon2580
-## Version: 2.1
+## Version: 2.2
 
 embeds.xml
+locale\locale.xml
 FastAutoSell.lua
