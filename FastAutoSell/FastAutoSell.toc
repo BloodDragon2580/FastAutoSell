@@ -1,8 +1,8 @@
-## Interface: 120001
+## Interface: 120000
 ## Title:|cffd6266cFastAutoSell|r
 ## Notes: Simple addon that allows you to sell all your trash items (gray) to a vendor.
 ## Author: BloodDragon2580
-## Version: 11.4
+## Version: 11.5
 ## IconTexture: Interface\AddOns\FastAutoSell\Media\Texture\logo
 
 embeds.xml
